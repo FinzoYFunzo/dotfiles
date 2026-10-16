@@ -1,0 +1,8 @@
+return {
+  'Everblush/nvim',
+  as = 'everblush',
+  opts = {},
+  config = function()
+    vim.cmd 'colorscheme everblush'
+  end,
+}
