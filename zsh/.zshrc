@@ -165,3 +165,7 @@ npx() { lazy-nvm; npx $@ }
 # [ -s "/usr/share/nvm/init-nvm.sh" ] && . "/usr/share/nvm/init-nvm.sh"
 
 # zprof
+
+# >>> railway initialize >>>
+source "$HOME/.railway/env"
+# <<< railway initialize <<<
