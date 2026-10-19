@@ -6,7 +6,7 @@ local function my_on_attach(bufnr)
   end
 
   -- XXX: la mayoria de aquí son defaults keymappings
-  vim.keymap.set('n', '<C-Right>', api.tree.change_root_to_node, opts 'CD') -- <C-]>
+  vim.keymap.set('n', '<C-l>', api.tree.change_root_to_node, opts 'CD') -- <C-]>
   vim.keymap.set('n', '<C-e>', api.node.open.replace_tree_buffer, opts 'Open: In Place')
   vim.keymap.set('n', '<C-k>', api.node.show_info_popup, opts 'Info')
   vim.keymap.set('n', '<C-r>', api.fs.rename_sub, opts 'Rename: Omit Filename')

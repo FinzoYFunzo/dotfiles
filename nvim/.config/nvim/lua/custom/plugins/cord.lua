@@ -6,10 +6,17 @@ return {
     display = {
       theme = 'minecraft',
     },
+    idle = {
+      show_status = false,
+      unidle_on_focus = false,
+    },
+    timestamp = {
+      reset_on_idle = true,
+    },
     text = {
       default = nil,
       workspace = function(opts)
-        return 'En ' .. opts.workspace
+        return 'en ' .. opts.workspace
       end,
       viewing = function(opts)
         return 'Viendo ' .. opts.filename
@@ -48,9 +55,9 @@ return {
         return 'Jugando ' .. opts.name
       end,
       terminal = function(opts)
-        return 'Ejecutando comandos en' .. opts.name
+        return 'En la terminal'
       end,
-      dashboard = 'Casita',
+      dashboard = 'Construyendo una casita',
     },
   },
 }
